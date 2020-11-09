@@ -1,13 +1,19 @@
 .header--dark {
     background-color: rgb(51,57,64);
     color: rgb(236,236,236);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 .header__title {
-    display: inline-block;
+    display: flex-end;
     font-size: 1.25rem;  
 }
 .header__search {
-    display: inline-flex;   
+    display: inline-flex;
+    font-size: 1.25rem;
+    padding-right: 1rem;
+    margin-left: auto;
 }
 
 .search__input {
@@ -15,19 +21,17 @@
     border-radius:0 4px 4px 0;
     display: inline-block;
     font-size: 1.2rem;
-    padding:  0.75 0.375rem;
+    padding:  0.375rem 0.75 ;
+    transform: border-color .15s;
     /* A szegély színére állíts be egy áttünést, ami .15 másodpercig tart. */
 }
 .input:focus .search__input {
-    border: 2px solid rgb(128,189,255);
-    border-radius:0 4px 4px 0;
-    display: inline-block;
-    font-size: 1.2rem;
-    padding:  0.75 0.375rem;
-    /* A szegély színére állíts be egy áttünést, ami .15 másodpercig tart. */
+    border-color: rgb(128,189,255);
+
 }
 .search__btn {
     background-color: rgb(0,123,255);
+    /* float: right; */
     /* nagyító ikon */
 }
 
@@ -37,8 +41,8 @@ aside {
 .main__nav {
     background-color: rgb(33,37,41);
     /* display: inline-block; */
-    width: 30%;
-    /* height: 100%; */
+    /* width: 30%;  - nem jó! */
+    /* height: 100%; - nem segít */
     /* li: tartalom, ikonok */
 }
 
